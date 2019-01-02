@@ -1,7 +1,6 @@
 import os
 from functools import lru_cache
 
-from apscheduler.jobstores.memory import MemoryJobStore
 from ..utils import find_config
 
 __author__ = 'wmcginnis'
@@ -160,9 +159,9 @@ class ProdSettings(BaseSettings):
     # METRICS
     METRICS_INDEX_NAME = '.elastichq_metrics'
 
-    SCHEDULER_JOBSTORES = {
-        'default': MemoryJobStore()
-    }
+    # SCHEDULER_JOBSTORES = {
+    #     'default': MemoryJobStore()
+    # }
     # SCHEDULER_JOBSTORES = {
     #     'default': SQLAlchemyJobStore(url='sqlite:///flask_context.db')
     # }
