@@ -1,12 +1,18 @@
+#
+# For Development only!
+#
+# Forces the HQ docker container to be built using local sources.
+# Run with: docker-compose -f docker-compose-dev.yml up --build
+#
+
 version: "3"
 
 services:
   hq:
-    image: elastichq/elasticsearch-hq:v3.6.0-alpha
-    container_name: elastichq
+    build: .
     restart: always
     ports:
-     - "5000:5000"
+      - "5000:5000"
     depends_on:
       - redis
   redis:
