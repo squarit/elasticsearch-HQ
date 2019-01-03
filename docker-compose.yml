@@ -2,7 +2,6 @@ version: "3"
 
 services:
   hq:
-    container_name: elastichq
     build:
       context: .
       dockerfile: Dockerfile
@@ -13,6 +12,5 @@ services:
       - redis
   redis:
     build: ./deployment/redis
-    container_name: redisdb
     expose:
       - "6379"
