@@ -27,7 +27,7 @@
   "homepage": "https://github.com/ElasticHQ/elasticsearch-HQ#readme",
   "dependencies": {
     "@uirouter/angularjs": "^1.0.12",
-    "angular": "^1.6.8",
+    "angular": "^1.8.0",
     "angular-highlightjs": "^0.7.1",
     "angular-tablesort": "github:pcasa/angular-tablesort#37e60e6a5af6732c39d99a84eac023adb3b6ae3c",
     "angular-ui-bootstrap": "^2.5.6",
